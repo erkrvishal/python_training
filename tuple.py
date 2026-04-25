@@ -1,0 +1,10 @@
+a = tuple()
+b = ("a","e","i","o","u")
+# print(a)
+# print(b)
+
+# print(b.count("e"))
+# print(b.index("i"))
+print(b[1:3])
+print(b[1:5:2])
+print(b[-1])
