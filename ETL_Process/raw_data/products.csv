@@ -1,6 +1,14 @@
 product_name,category,brand,cost_price
 Laptop,Electronics,Dell,48000
-Shirt,Fashion,Levis,800
-Mouse,Electronics,Logitech,400
-Notebook,Stationery,Classmate,200
+Laptop,Electronics,HP,47000
+Laptop,Electronics,Lenovo,45000
+Keyboard,Electronics,HP,1500
+Keyboard,Electronics,Logitech,1500
+Shirt,Fashion,Levis,3000
+Shirt,Fashion,Zara,4000
+Mouse,Electronics,HP,1800
+Mouse,Electronics,Logitech,1500
+Notebook,Stationery,Classmate,150
 Pen,Stationery,Reynolds,100
+Phone,Electronics,Apple,970000
+Phone,Electronics,Samsung,20000

@@ -1,0 +1,7 @@
+invoice_no,name,city,region,product,brand,store,quantity,unit_price,discount,order_timestamp,payment_mode
+INV1001,Vishal,Bangalore,Karnataka,Laptop,Dell,Store Bangalore,1,55000,500,2026-04-25 10:15:00,CARD
+INV1002,Rahul,Mumbai,Maharashtra,Shirt,Levis,Store Mumbai,2,1200,0,2026-04-25 11:00:00,UPI
+INV1003,Vishal,Bangalore,Karnataka,Mouse,Logitech,Store Bangalore,1,800,50,2026-04-25 11:30:00,COD
+INV1004,Anita,Delhi,Delhi,Notebook,Classmate,Store Delhi,3,500,0,2026-04-25 12:10:00,UPI
+INV1005,Sneha,Hyderabad,Telangana,Laptop,Dell,Store Mumbai,1,55000,1000,2026-04-25 13:45:00,CARD
+INV1006,Rahul,Mumbai,Maharashtra,Pen,Reynolds,Store Bangalore,5,200,0,2026-04-25 14:00:00,UPI

@@ -1,5 +1,31 @@
-name,city,state,signup_date,status
-Vishal,Bangalore,Karnataka,2025-01-01,ACTIVE
-Rahul,Mumbai,Maharashtra,2025-03-15,ACTIVE
-Anita,Delhi,Delhi,2024-12-20,INACTIVE
-Sneha,Hyderabad,Telangana,2025-05-05,ACTIVE
+name,city,state,status
+Vishal,Bangalore,Karnataka,ACTIVE
+Vishal,Mumbai,Maharashtra,ACTIVE
+Vishal,Delhi,Delhi,ACTIVE
+Vishal,Chennai,Tamil Nadu,ACTIVE
+Vishal,Hyderabad,Telangana,ACTIVE
+Rahul,Mumbai,Maharashtra,ACTIVE
+Rahul,Delhi,Delhi,INACTIVE
+Rahul,Bangalore,Karnataka,ACTIVE
+Rahul,Chennai,Tamil Nadu,ACTIVE
+Rahul,Hyderabad,Telangana,ACTIVE
+Anita,Delhi,Delhi,ACTIVE
+Anita,Bangalore,Karnataka,ACTIVE
+Anita,Chennai,Tamil Nadu,INACTIVE
+Anita,Hyderabad,Telangana,ACTIVE
+Anita,Mumbai,Maharashtra,ACTIVE
+Sneha,Hyderabad,Telangana,ACTIVE
+Sneha,Mumbai,Maharashtra,ACTIVE
+Sneha,Delhi,Delhi,ACTIVE
+Sneha,Bangalore,Karnataka,ACTIVE
+Sneha,Chennai,Tamil Nadu,ACTIVE
+Amit,Bangalore,Karnataka,ACTIVE
+Amit,Chennai,Tamil Nadu,ACTIVE
+Amit,Delhi,Delhi,INACTIVE
+Amit,Hyderabad,Telangana,ACTIVE
+Amit,Mumbai,Maharashtra,ACTIVE
+Priya,Bangalore,Karnataka,ACTIVE
+Priya,Chennai,Tamil Nadu,ACTIVE
+Priya,Delhi,Delhi,ACTIVE
+Priya,Hyderabad,Telangana,ACTIVE
+Priya,Mumbai,Maharashtra,ACTIVE
