@@ -1,0 +1,58 @@
+{
+  "Comment": "Retail etl job orchestration",
+  "StartAt": "RunGlueJob",
+  "States": {
+    "RunGlueJob": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::glue:startJobRun.sync",
+      "Parameters": {
+        "JobName": "retail-etl-script-pyspark",
+        "Arguments": {
+          "--bucket.$": "$.bucket",
+          "--key.$": "$.key"
+        }
+      },
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "State.ALL"
+          ],
+          "Next": "JobFailed"
+        }
+      ],
+      "Next": "Snowflake_ingestion"
+    },
+    "Snowflake_ingestion": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "OutputPath": "$.Payload",
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:us-east-1:142083400213:function:snowflake_ingestion:$LATEST"
+      },
+      "Retry": [
+        {
+          "ErrorEquals": [
+            "Lambda.ServiceException",
+            "Lambda.AWSLambdaException",
+            "Lambda.SdkClientException",
+            "Lambda.TooManyRequestsException"
+          ],
+          "IntervalSeconds": 1,
+          "MaxAttempts": 3,
+          "BackoffRate": 2,
+          "JitterStrategy": "FULL"
+        }
+      ],
+      "Next": "JobSucceeded"
+    },
+    "JobSucceeded": {
+      "Type": "Pass",
+      "Result": "Glue Job Completed successfully",
+      "End": true
+    },
+    "JobFailed": {
+      "Type": "Fail",
+      "Cause": "Glue Job failed"
+    }
+  }
+}
